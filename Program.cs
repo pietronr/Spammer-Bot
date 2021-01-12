@@ -25,9 +25,9 @@ namespace TesteEmail
             client.Timeout = 10000;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
-            client.Credentials = new System.Net.NetworkCredential("awayshrimp2605@gmail.com", "Pietro2001");
+            client.Credentials = new System.Net.NetworkCredential("youremail@email.com", "yourpassword");
 
-            MailMessage mm = new MailMessage("pietro.roque@auvo.com", "spiderpig2016@gmail.com", "Fala", "naaaaaaao stoneeee");
+            MailMessage mm = new MailMessage("from", "to", "title", "body");
             mm.BodyEncoding = UTF8Encoding.UTF8;
             mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
             mm.Attachments.Add(data);
